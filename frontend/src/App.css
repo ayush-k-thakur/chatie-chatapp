@@ -1,3 +1,7 @@
+.home{
+    backdrop-filter: blur(20px);
+    display: flex;
+}
 @media screen and (max-width: 765px) {
     .home{
         height: 90%;
@@ -6,7 +10,7 @@
 }
 @media screen and (max-width: 765px) and (min-width: 500px) {
     .sidebar{
-        width: 40%;
+        width: 50%;
     }
     .message{
         width: 80%;
@@ -18,8 +22,14 @@
 @media screen and (max-width: 500px) {
     .home{
         height: 100%;
-        width: 100%;
-        display: flex;
+        overflow: scroll;
         flex-direction: column;
+    }
+    .message{
+        margin-top: 30px;
+        max-height: 600px;
+    }
+    ::-webkit-scrollbar{
+        display: none;
     }
 }
