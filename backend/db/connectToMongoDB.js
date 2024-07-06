@@ -10,8 +10,3 @@ const connectToMongoDB = async () => {
 };
 
 export default connectToMongoDB;
-<<<<<<< HEAD
-=======
-
-// cSPRROO61KpLe8Wb
->>>>>>> 5033899dd3077113c1e16a5ea36eb75dde5d5d47
