@@ -19,9 +19,9 @@ dotenv.config();
 app.use(express.json());
 app.use(cookieParser());
 
-app.use("/", authRoutes);
-app.use("/messages", messageRoutes);
-app.use("/users", userRoutes);
+app.use("/api/auth", authRoutes);
+app.use("/api/messages", messageRoutes);
+app.use("/api/users", userRoutes);
 
 app.use(express.static(path.join(__dirname, "/frontend/dist")));
 
